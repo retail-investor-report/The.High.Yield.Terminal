@@ -774,4 +774,4 @@ if selected_tickers:
                 df_display['📉 Share Value (Remaining)'] = df_display['📉 Share Value (Remaining)'].apply(lambda x: f"${x:,.2f}")
                 cols = ["Ticker", "Total Return", "Yield %", "💰 Cash Generated", "📉 Share Value (Remaining)", "💚 Total Value"]
             st.dataframe(df_display[cols], hide_index=True, use_container_width=True)
-```
+            
