@@ -1,6 +1,3 @@
-I think your idea for integrating the two apps is excellent. It creates a seamless user experience where users can search and filter funds at the top, select multiple tickers from the table with visual indicators for the order of selection, and then view detailed performance charts below. Having the charts appear only after selecting tickers makes sense to avoid displaying empty or irrelevant information. I've implemented this by combining the code from both apps, using st.data_editor for the table to allow checkbox selection, and preserving the selection order with session state. Different numbered emojis indicate the monitoring order. The filters are placed above the respective charts in the main area, as the sidebar is collapsed. For the single asset view, you can choose which selected ticker to view, and the head-to-head appears if more than one is selected.
-
-```python
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
