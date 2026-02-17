@@ -536,7 +536,7 @@ if selected_tickers:
                     initial_shares = dollars / entry_price if entry_price > 0 else 0
             else:
                 st.error("No data for date range.")
-                return
+                st.stop()
             # Calculate and display
             journey = calculate_journey(selected_ticker, buy_date, end_date, initial_shares, use_drip, price_df, hist_df)
             if journey.empty:
